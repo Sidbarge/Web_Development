@@ -17,10 +17,12 @@
         * {
             overflow-x: hidden;
         }
-        ::selection{
+
+        ::selection {
             color: orange;
             background-color: black;
         }
+
         .logo {
             display: flex;
             justify-content: center;
@@ -189,28 +191,32 @@
         .heading4 {
             color: white;
         }
-        .about_heading{
+
+        .about_heading {
             display: flex;
             justify-content: center;
             gap: 60px;
         }
-        .leftheading p:nth-child(1){
+
+        .leftheading p:nth-child(1) {
             font-size: 24px;
             font-weight: bold;
             font-family: "poppins";
         }
-        .leftheading p:nth-child(2)
-        {
+
+        .leftheading p:nth-child(2) {
             font-family: "poppins";
         }
-        .leftheading{
-            width:600px ;
+
+        .leftheading {
+            width: 600px;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        .rightheading{
+
+        .rightheading {
             width: 300px;
             height: 200px;
             background-color: white;
@@ -221,9 +227,10 @@
             text-align: center;
             border-radius: 15px;
             padding: 20px;
-            
+
         }
-        .questions{
+
+        .questions {
             color: white;
             font-family: "poppins";
             height: 50%;
@@ -233,50 +240,87 @@
             margin-top: 100px;
             margin-left: 270px;
         }
-        .items{
+
+        .items {
             align-self: start;
         }
+
         /* .rightheading:hover{
             transform: rotate(1turn);
             transition: 2s;
         } */
-        @media screen and (max-width:1000px){
-            .cards{
+        @media screen and (max-width:1000px) {
+            .cards {
                 display: grid;
                 grid-template-columns: 100vw;
             }
-            .footer_main{
+
+            .footer_main {
                 display: flex;
                 flex-direction: column;
             }
-            .footer_logo{
+
+            .footer_logo {
                 display: flex;
                 flex-direction: column;
+            }
+
+            .heading {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+
+            .logo1 {
+                display: none;
+            }
+
+            .heading2 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .heading4 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .questions {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100vw;
+                margin: 40px 40px auto;
+                /* margin-right: 40px; */
             }
         }
-        .footer_main{
+
+        .footer_main {
             display: flex;
             gap: 60px;
             margin-top: 60px;
             justify-content: center;
         }
-        .footer_main .headings{
+
+        .footer_main .headings {
             font-size: 16px;
-            font-weight:bolder;
+            font-weight: bolder;
             font-family: "Segoe UI";
         }
-        .footer_main .body{
+
+        .footer_main .body {
             font-family: "Segoe UI";
             font-size: 14px;
             color: gray;
         }
-        .footer_main input{
+
+        .footer_main input {
             border-radius: 10px;
             width: 242px;
             height: 30px;
             border-color: rgb(151, 147, 147);
         }
-        .footer_logo{
+
+        .footer_logo {
             width: 66vw;
             margin: auto;
             margin-top: 40px;
@@ -285,7 +329,8 @@
             object-fit: contain;
             mix-blend-mode: color-burn;
         }
-        .copyright{
+
+        .copyright {
             width: 66vw;
             margin: auto;
             font-size: 12px;
@@ -363,7 +408,8 @@
                     <button class="button1 buttons"><a style="color: white; text-decoration: none;"
                             href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*1kiof2r*_ga*MTY3NjE1OTI3NC4xNzA2NTQ4NjQ1*_ga_QNXHVTPWNS*MTcwNjU1NDIzNS4yLjEuMTcwNjU1OTg5OS42MC4wLjA.">Download
                             32-bit</a></button>
-                    <button class="button2 buttons"><a style="color: white; text-decoration: none;" href="/Projects/Project_UltraEdit_Clone/ue_english_64.exe">Download 64-bit</a></button>
+                    <button class="button2 buttons"><a style="color: white; text-decoration: none;"
+                            href="/Projects/Project_UltraEdit_Clone/ue_english_64.exe">Download 64-bit</a></button>
                 </span>
             </div>
             <div class="card">
@@ -479,19 +525,20 @@
         <div class="about">
             <div class="about_heading heading4">
                 <div class="leftheading">
-                   
+
                     <p>Join the UltraEdit newsletter</p>
                     <p>Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on
                         UltraEdit.
                     </p>
-                
+
                 </div>
                 <div class="rightheading heading4">
                     <div style="color: rgb(56, 203, 203); font-size: 24px;">
                         Subscribe to our emails
                     </div>
                     <div style="color: rgb(81, 80, 80);">Enter email address</div>
-                    <input style="width: 240px; align-self: center; height: 30px; border-color: gray;" type="email" placeholder="Enter">
+                    <input style="width: 240px; align-self: center; height: 30px; border-color: gray;" type="email"
+                        placeholder="Enter">
                     <button style="align-self: center;">Sign up</button>
                 </div>
             </div>
@@ -500,17 +547,20 @@
                     EXE or MSI?
                 </div>
                 <div class="items">
-                    The EXE builds of our products are the preferred download for most of our users, running Windows 8.1 and later.
+                    The EXE builds of our products are the preferred download for most of our users, running Windows 8.1
+                    and later.
                 </div>
                 <div class="items">
-                    We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). Get the UltraEdit MSI installer.
+                    We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). Get the
+                    UltraEdit MSI installer.
                 </div>
                 <br>
                 <div class="items" style="font-size: 24px; font-weight: bold;">
                     Free trial period
                 </div>
                 <div class="items">
-                    This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must purchase a license to continue using it.
+                    This application comes with a free, fully functional 30 day trial period. After the trial period
+                    expires, you must purchase a license to continue using it.
                 </div>
             </div>
         </div>
@@ -576,4 +626,5 @@
         </div>
     </footer>
 </body>
+
 </html>
