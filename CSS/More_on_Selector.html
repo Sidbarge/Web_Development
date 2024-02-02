@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .boxes:nth-child(2){
+            border: 2px solid black;
+        }
+        .boxes::first-line{
+            color: red;
+        }
+        .box::before{
+            content: "I am above all"; /*This adds content above the content of boxes*/
+        }
+        ::selection{
+            color: orange;  /*This changes the color after selection*/
+            background-color: black;
+        }
+        input::placeholder{
+            color: rgb(78, 80, 81);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="boxes">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit at eum omnis reprehenderit dicta quasi inventore maxime dolores magni dolore. Vitae necessitatibus, atque voluptatem nemo a, ex, numquam in beatae eos minima odio. Nemo similique culpa et sint dolorum? Doloremque blanditiis totam ipsam enim distinctio.
+        </div>
+        <div class="boxes">
+            I am a box 
+        </div>
+        <div class="boxes">
+            I am a box
+        </div>
+    </div>
+    <input type="text" placeholder="Type your name here">
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50vw;
+            height: 50vh;
+            background-color: antiquewhite;
+        }
+        .box
+        {
+            width: 5vw;
+            height: 5vh;
+            background-color: blueviolet;
+            transition-property: transform,background-color;  /*Choose which property to apply transition*/
+            transition-duration: 3s;  /*Time taken for the transition*/
+            transition-timing-function: ease-in-out;  /*In ease-in-out the transition speed will increase then decrease later*/
+            transition-delay: 1s;  /*Delay after which the transition will be applied*/
+
+            /* transition:all 3s ease-in-out 1s ; By this all the properties can be applied at a time */
+        }
+
+        .translate:hover{
+            transform: translateX(10vw) translateY(10vh); 
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>

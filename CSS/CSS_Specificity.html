@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and cascade</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .red{
+            color: red;
+        }
+        #orange{
+            color: orange;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .purple{
+            color: purple;
+        }
+        /* If the selector is same type then the style is selected based on the position*/
+        /*And if the selector is different then the preference is Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector*/
+    </style>
+</head>
+<body>
+    <h1 class="red yellow purple" id="orange">
+        Specificity and Cascade
+    </h1>
+</body>
+</html>

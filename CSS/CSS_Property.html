@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        .box{
+            border:2px solid blue;
+            /*display: inline;  This makes the box element inline*/
+            display: inline-block; /*By this we can add margin, padding and width to the inline element*/
+            margin: 40px;
+            padding: 40px;
+        }
+        .box1{
+           /* display: none; /*By this the content is not shown*/
+            visibility: hidden;/*By this content only hide but the area remains as it is*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am box
+    </div>
+    <div class="box">
+        I am also a box 
+    </div>
+    <span>
+        I am a span
+    </span>
+    <span>
+        I am another span
+    </span>
+</body>
+</html>

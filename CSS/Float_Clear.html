@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        img {
+            float: left;
+            /*By this image will float on the left side and allow elements on right side*/
+        }
+
+        .card {
+            border: 2px solid black;
+            display: flow-root;
+            /*By this it will give border to element even if it is overflowing*/
+        }
+
+        .cards {
+            border: 2px solid red;
+        }
+
+        .cards:nth-child(3) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZhwQHCaWw1rdTEAwdp7NY7-JvsMm1bEJk8AjOsn1dg&s"
+            alt="img" width="200" height="200">
+        <div class="cards">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis blanditiis sapiente nemo odio ea voluptas
+            rem. Blanditiis fugit repellat nobis.</p>
+        </div>
+        <div class="cards" style="clear: left;"><!--This will not allow element to be on the left side-->
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, expedita nemo voluptatibus asperiores
+            quidem doloremque inventore omnis quibusdam voluptas! Earum nesciunt similique amet, accusamus, culpa
+            mollitia dolorem cumque dolore quaerat autem vero sint ad ipsum hic voluptates porro voluptatem veniam
+            consectetur explicabo et quis! Atque at, qui ad nam voluptatibus ipsa nisi rem illum molestiae quia ratione
+            soluta, tempore libero. Repellat quibusdam consequatur obcaecati explicabo tempore vitae aut placeat magni
+            nesciunt, assumenda doloribus vel necessitatibus corporis velit provident iusto officia sit esse eum
+            consequuntur nostrum eaque quam. Sunt a omnis tempore laudantium rerum, nihil repellendus, beatae culpa
+            minima accusantium natus facere nostrum veritatis mollitia sint, quia eveniet reiciendis repellat aut quam
+            dignissimos hic officia. Nostrum beatae consectetur in alias rem delectus soluta officia ab non! Provident
+            laborum ad, ipsam corrupti aperiam fugit cum repellendus a facilis nostrum deserunt hic nobis, commodi enim
+            sapiente alias, quasi praesentium eius voluptate numquam aliquid in. Enim architecto nostrum cum. Voluptatum
+            debitis aut vel dolor in molestias? Neque ab repellat suscipit. Nisi quae nulla dolores ut nesciunt. Quod
+            deleniti natus atque tenetur labore, fugiat numquam nesciunt praesentium? Suscipit ullam eaque provident sit
+            labore, tempore accusantium tenetur mollitia molestias eos nemo excepturi esse ipsa doloremque fugiat.
+        </div>
+        <div class="cards">
+            card 3
+        </div>
+    </div>
+</body>
+
+</html>

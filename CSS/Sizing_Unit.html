@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Unit</title>
+    <style>
+        .box{
+            border: 2px solid blue;
+            background-color: lightblue;
+            margin: auto;
+            width: 80vw;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid blue;
+            background-color: lightblue;
+            margin: 20px auto;
+            width: 80vw;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .container p{
+            font-size: 2em; /*by this em doubles the value of font size which was inherited by p from the container and rem multiples the root font size */
+            width: 50%;
+        }
+        .container2{
+            border: 2px solid blue;
+            background-color: lightblue;
+            width: 100vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae suscipit voluptas perferendis iusto veritatis libero optio iste molestias ab mollitia odit qui, architecto deleniti cum, eligendi error labore voluptate! Est ratione at eaque, laborum officiis consequatur quidem reiciendis voluptatibus eveniet nemo suscipit voluptates, maiores dolorem omnis commodi rem totam possimus voluptatem repellendus. Aut, amet? Reiciendis, quis!
+       </p>
+    </div>
+    <div class="container2">
+        This is a another container
+    </div>
+</body>
+</html>

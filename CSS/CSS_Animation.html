@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            width: 50vw;
+            height: 50vh;
+            background-color: blueviolet;
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            background-color: brown;
+            animation: MyAnimation,MyAnimation2;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes MyAnimation {
+            from{
+
+            }
+            to{
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes MyAnimation2 {
+            0%{
+                background-color: brown;
+            }
+            20%{
+                background-color: blue;
+            }
+            60%{
+                background-color: chocolate;
+            }
+            80%{
+                background-color: crimson;
+            }
+            100%{
+                background-color: forestgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tags</title>
+</head>
+<body>
+    
+    <form action="backend.php">
+        <fieldset>
+        <legend>This is HTML Form</legend>
+        
+        <label for="name">Name:</label>
+        <input type="text" name="Myname" id="name" required>
+        
+        <br>
+        <div>
+            Date: <input type="date" name="MyDate">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="MyEmail">
+        </div>
+        <br>
+        <div>
+            Class: <input type="number" name="MyClass" >
+        </div>
+        <br>
+        
+        <label for="Eligiblity">Are you eligible? </label> <!--By using this by clicking on the text checkbox can be checked or unchecked-->
+        <div>
+            <input type="checkbox" name="MyEligibility" id="Eligiblity" checked>
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="MyCar" id="car">
+                <option value="audi" >Audi</option>
+                <option value="bmw" selected>BMW</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="MyIntro" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Clear">
+        </div>
+    </fieldset>
+    </form> <!--The form is submitted to the backend.php-->
+</body>
+</html>

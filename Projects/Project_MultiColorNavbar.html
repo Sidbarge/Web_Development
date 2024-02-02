@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Website</title>
+    <style>
+        :root {
+            --color:royalblue;
+            --seccolor: rgb(119, 149, 239);
+        }
+
+        body {
+            background-color: var(--seccolor);
+        }
+
+        @media screen and (orientation:portrait) {
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        nav {
+            background-color: var(--color);
+            position: sticky;
+            top: 0px;
+            width: 100vw;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        ul li {
+            padding: 10px;
+            margin: 10px;
+            list-style: none;
+            font-weight: bold;
+            color: white;
+            font-family: cursive;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: wheat;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            padding: 10px;
+            margin: 10px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box4">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Sevices</a></li>
+            </ul>
+        </nav>
+        <div class="boxes">
+            <div class="box" id="box1"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="box4"></div>
+        </div>
+    </header>
+</body>
+
+</html>

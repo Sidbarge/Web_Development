@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector*/
+        div{
+            background-color: red;
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* Id Selector */
+        #Green{
+            background-color: green;
+        }
+        /* Child Selector */
+        div >p{
+            color: blue;
+            background-color: brown;
+        }
+        /* Descendent Selector */
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Univarsal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: gray;
+        }
+        a:link{
+            color: blue;
+        }
+        a:hover{
+            color: darkblue;
+        }
+
+        /*Attribute Selector*/
+        [data-color="Primary"]{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        This is a div
+        <p>This is a paragraph inside a div</p>
+    </div>
+    <div id="Green">
+        This is another div
+        <article>
+            <p>
+                This is a para inside a article which is also inside div  <!--For child selector to be applied it should be directly inside the div-->
+            </p>
+        </article>
+    </div>
+    <div data-color="Primary">
+        Hello
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.instagram.com">Go to Instagram</a>
+</body>
+</html>

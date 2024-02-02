@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design for a layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* overflow-x: hidden; */
+        }
+        header{
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        nav {
+            background-color: royalblue;
+            /* width: 100vw; */
+        }
+
+
+        nav ul {
+            display: flex;
+        }
+
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        .rectangle {
+            height: 40vw;
+            width: 90vw;
+            background-color: greenyellow;
+            margin: auto;
+            margin-top: 20px;
+            /* position: relative; */
+        }
+
+        .sqaure1 {
+            height: 500px;
+            width: 500px;
+            background-color: green;
+            float: left;
+            position: relative;
+            top: 60px;
+            left: 60px;
+        }
+
+        .sqaure2 {
+            height: 500px;
+            width: 500px;
+            background-color: green;
+            float: right;
+            position: relative;
+            top: 60px;
+            right: 60px;
+        }
+
+        .rectangle2 {
+            width: 70vw;
+            height: 100px;
+            border: 2px solid black;
+            margin: auto;
+            border-radius: 30px;
+            text-align: center;
+            font-size: 70px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            background-color: orange;
+            border-radius: 40px;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        ::selection {
+            color: orange;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="rectangle">
+            <div class="sqaure1"></div>
+            <div class="sqaure2"></div>
+        </div>
+        <br>
+        <div class="rectangle2">
+            Welcome to my Webpage
+        </div>
+        <div class="circle"></div>
+    </main>
+    <footer>
+        Copyright &copy; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siddharth
+    </footer>
+</body>
+
+</html>

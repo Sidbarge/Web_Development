@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI';
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            height: 120px;
+            
+
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            padding:30px;
+        }
+        
+
+        li img{
+                /* margin: 10px; */
+                
+            position: relative;
+            left: 8px;
+            top: 4px;   
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            /* margin: 20px; */
+            width: 60vw;
+            margin: auto;
+            min-height: 40vh;
+            /* gap: 10px; */
+            text-align: center;
+        }
+        #button1{
+            text-transform: uppercase;
+            color: aliceblue;
+            font-weight: 900;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(62, 148, 148);
+        }
+        #maintext{
+           
+            padding-left:80px;
+            padding-top:50px;
+            padding-right:50px;
+            font-size:50px;
+        }
+        #maintext1{
+            padding:40px;
+            font-size:25px;
+        }
+
+        
+        .button{
+          
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+
+        }
+        span{
+            
+            padding-left: 440px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul class="logo">
+                <li>
+                    <img src="./UE-Logo-1.webp" alt="main logo" >
+                </li>
+            </ul>
+            <ul class="list">
+                <li>
+                    product<img src="./Screenshot 2024-02-01 190553.png" alt="nav ion" >
+                </li>
+                <li>
+                    pricing <img src="./Screenshot 2024-02-01 190553.png" alt="nav ion">
+                </li>
+                <li>
+                    resource <img src="./Screenshot 2024-02-01 190553.png" alt="nav ion">
+                </li>
+                <li>
+                    about <img src="./Screenshot 2024-02-01 190553.png" alt="nav ion">
+                </li>
+                <li>
+                    <img src="./Screenshot 2024-02-01 184122.png" alt="nav bar image">
+                </li>
+            </ul>
+        </nav>
+    </div>
+   <div class="box">
+    <div class="content" >
+        <p id="maintext" >
+            Download <strong>UltraEdit</strong> for Windows
+            <img src="./Screenshot 2024-02-01 184211.png" alt="">
+        </p>
+        <p id="maintext1">
+            Download and try UltraEdit before you buy it! This download includes the full Windows 
+            version of the text editor.
+        </p>
+        <div class="button">
+            <button id="button1">
+                download mac or linux version
+            </button>
+        </div>
+            
+        
+    </div>
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Transform  */
+            /* transform: rotate(40deg); This rotates the box by 40 degree */
+            /* transform: rotate(0.25turn); This will rotate it by 90 degree as 360 degree is 1 turn */
+            /* transform: rotateX(45deg); This will rotate the box by 45 degree on x axis front and back if we rotate by 90 degree then the box will be visible as a line */
+
+            /* Scale  */
+            /* transform: scale(1.5); */
+
+            /* Skew  */
+            /* transform: skewY(5deg); */
+
+            /* Translate  */
+            /* transform: translate(20px); */
+            /* transform: translate(100%); */
+
+            /* transform: translate(100%) scale(1.5) skew(5deg); By this we apply multiple transform property at a time  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
