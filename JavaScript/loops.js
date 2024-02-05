@@ -3,7 +3,7 @@ for(let i = 0 ;i<=10 ;i++){
     console.log(i);
 }
 
-let obj={
+let obj1={
     name:"SIddharth",
     rollno:111,
     year:3
@@ -27,3 +27,21 @@ do{
     console.log(i)
     i++
 }while(i<10)
+
+let obj={
+    'harry':98,
+    'rohan':70,
+    'akash':7
+}
+
+//Using for in loop
+// for (const key in obj) {
+//     console.log(obj[key])
+// }
+
+//Using for loop
+let keys=Object.keys(obj)
+for(let i=0;i<keys.length;i++){
+    const key=keys[i]
+    console.log(obj[key])
+}

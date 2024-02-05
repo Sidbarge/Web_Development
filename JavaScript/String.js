@@ -17,3 +17,8 @@ console.log(a.toUpperCase())
 console.log(a.toLowerCase())
 console.log(a.charAt(4))
 console.log(a.slice(0,3))
+
+
+let e="barge"
+let f=e+5
+console.log(typeof f)

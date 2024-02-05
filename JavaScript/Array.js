@@ -83,4 +83,64 @@ const greaterThanSeven=(e)=>{
 
 console.log(a.filter(greaterThanSeven))
 
-// Array.from("Siddharth") //This is used to make any element array
+Array.from("Siddharth") //This is used to make any element array
+
+let array=[4,5,7,8,2]
+array.toString()
+console.log(typeof array.toString()) //Converts the array into the string
+
+console.log(array.join("-"))
+
+array.pop() //Removes the last element of the array
+console.log(array)
+
+array.push(2)
+console.log(array) //Adds an element at the end
+
+array.shift()  //Removes the first element of the array
+console.log(array)
+
+array.unshift(4) //Adds an element at the start
+console.log(array)
+
+delete array[2]  //Deletes an element at the index 2
+console.log(array)
+
+array.sort()
+console.log(array)
+
+for (const i of array) {
+    console.log(i)
+}
+
+let obj={
+    1:'Siddharth',
+    2:'Barge'
+}
+
+for (const i in obj) {
+    console.log(obj[i]) //To print the values
+    console.log(i) //To print the keys
+}
+
+array.forEach((values,index,array) => {
+    console.log((values,index,array))
+});
+
+let newarray=array.map((e)=>{
+    return e**2
+})
+console.log(newarray)
+
+let greaterThanFour=(x)=>{
+    if(x>4){
+        return true
+    }
+    return false
+}
+
+console.log(array.filter(greaterThanFour))
+
+for (const i in array) {
+    console.log()
+}

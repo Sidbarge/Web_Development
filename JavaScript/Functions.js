@@ -14,3 +14,12 @@ const func1= (x)=>{
 }
 
 func1(45);
+
+let sum2=(x,y)=>{
+    return x+y
+}
+
+let z=sum(55,6)
+console.log(z)
+
+
