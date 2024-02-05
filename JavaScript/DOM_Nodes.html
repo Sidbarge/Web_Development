@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- This is a comment node -->
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+    <script>
+        console.log("Hello")
+        console.log(document.body.childNodes)
+        console.log(document.body.childNodes[1])
+        console.log(document.body.childNodes[1].childNodes)
+        let cont=document.body.childNodes[1]
+        console.log(cont.firstChild)  //Here text is the space between container and box1
+        console.log(cont.firstElementChild)
+        console.log(cont.firstElementChild.parentElement)
+        console.log(document.body.firstElementChild.children)
+        console.log(document.body.firstElementChild.children[2])
+        console.log(document.body.firstElementChild.children[2].nextElementSibling)
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Selecting by Ids, Classes, and More</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box2.5</div>
+        <div id="green" class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+
+    <script>
+        //By classname
+        let boxes=document.getElementsByClassName("box")
+        console.log(boxes)
+        boxes[2].style.backgroundColor="red"
+        //By id
+        document.getElementById("green").style.backgroundColor="green"
+
+        //By query Selector
+        document.querySelector(".box").style.backgroundColor="yellow"  //This will be only applied to the first occurance
+
+        document.querySelectorAll(".box").forEach(e=>{
+            e.style.backgroundColor="cyan"                  //This will be applied to the all element
+        })
+    </script>
+</body>
+</html>
