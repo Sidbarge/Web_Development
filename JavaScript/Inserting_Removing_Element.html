@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="display: flex;" data-createdby="Siddharth">
+            Hey I am a box
+        </div>
+        <div class="box">
+            I am second box
+        </div>
+    </div>
+
+    <script>
+        console.log(document.querySelector(".box").getAttribute("style"))
+        console.log(document.querySelector(".box").setAttribute("style","color:red"))
+        console.log(document.querySelector(".box").hasAttribute("style"))
+        document.querySelector(".box").innerHTML
+        document.querySelector(".box").outerHTML
+
+        let a=document.createElement("div")
+        a.innerHTML="I have been inserted by <b>Siddharth</b>"
+        a.setAttribute("class","created")
+        a.setAttribute("style","color:green")
+        // document.querySelector(".container").append(a)   //will be inserted after container
+        // document.querySelector(".container").prepend(a)    //berfore container
+        document.querySelector(".box").after(a)
+
+
+        let c=document.getElementsByClassName("container")
+        c[0].classList.add("Demo")
+        let d=document.createElement("h1")
+        d.innerHTML="hello"
+        document.querySelector(".container").prepend(d)
+    </script>
+</body>
+</html>
