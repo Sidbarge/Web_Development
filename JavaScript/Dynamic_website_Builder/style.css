@@ -4,7 +4,7 @@ body{
 }
 .card{
     position: relative;
-    width: 98vw;
+    width: 90vw;
     height: 140px;
     border: 2px solid black;
     margin: 30px auto;
@@ -41,6 +41,7 @@ img{
     margin: 5px;
     right: 0px;
     bottom: 0px;
+    opacity: 0.75;
 }
 
 .title{

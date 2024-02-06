@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dynamic Website</title>
+    <style>
+        .container {
+            /* border: 2px solid black; */
+            width: 50vw;
+            height: auto;
+            margin-top: 200px;
+            margin-left: 150px;
+        }
+
+        .image-part {
+            position: relative;
+            display: flex;
+            /* border: 2px solid black; */
+            width: 168px;
+            height: 94px;
+            border-radius: 12px;
+        }
+
+        .image-part img {
+            width: 168px;
+            height: 94px;
+            border-radius: 12px;
+        }
+
+        .duration {
+            background-color: black;
+            color: white;
+            width: 35px;
+            height: 15px;
+            font-size: 12px;
+            /* border: 2px solid black; */
+            z-index: 1;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1px;
+            margin-bottom: 0px;
+            border-radius: 6px;
+        }
+
+        .main-part {
+            margin-left: 1vw;
+        }
+
+        .title {
+            /* border: 1px solid black; */
+            width: 41vw;
+            height: auto;
+            max-height: 5vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .title p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .cname {
+            /* border: 1px solid black; */
+            width: auto;
+            max-width: 7vw;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .dot {
+            display: flex;
+            justify-content: center;
+            margin-top: -1.5vw;
+            margin-left: 0.5vw;
+        }
+
+        .views {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0.5vw;
+        }
+
+        .months {
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0.5vw;
+            gap: 5px;
+        }
+
+        .months p,
+        .months h4 {
+            font-size: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <div class="card" style="display: flex; margin-left: 2vw;">
+            <div class="image-part">
+                <img src="#"
+                    alt="">
+                <div class="duration">31:22</div>
+            </div>
+            <div class="main-part">
+                <div class="title">
+                    <p>I am Very funny and i can do anything.</p>
+                </div>
+                <div class="second-part" style="display: flex; height: auto; max-height: 4vh;">
+                    <div class="cname">
+                        <p>CodeWithHarry</p>
+                    </div>
+                    <div class="dot">
+                        <h1>.</h1>
+                    </div>
+                    <div class="views">
+                        <p>762K</p>
+                    </div>
+                    <div class="dot">
+                        <h1>.</h1>
+                    </div>
+                    <div class="months">
+                        <p id="months-changable-id">2</p>
+                        <p id="template">months old</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function createCard(title, Cname, views, mothsOld, duration, thumbnail) {
+            document.querySelector('.title p').textContent = title;
+            document.querySelector('.cname p').textContent = Cname;
+            document.querySelector('.views p').textContent = views;
+            document.querySelector('.duration').textContent = duration;
+            document.querySelector('.months p').textContent = mothsOld;
+            document.querySelector('.image-part img').src = thumbnail;
+        }
+
+        function formatViews(views) {
+            if (views >= 1000000) {
+                return Math.floor(views / 1000000) + 'M';
+            } else if (views >= 1000) {
+                return Math.floor(views / 1000) + 'K';
+            } else {
+                return views.toString();
+            }
+        }
+
+        let title = prompt("Enter the title of your video...")
+        let cname = prompt("Enter the channel name...")
+        let views = parseInt(prompt("Enter the number of views..."))
+        let format_views = formatViews(views)
+        let months = prompt("Enter the number of months...")
+        let duration = prompt("Enter the duration of the video...")
+        let thumbnail = prompt("Enter the link of the image...")
+
+        createCard(title, cname, format_views, months, duration, thumbnail)
+    </script>
 </body>
+
 </html>
