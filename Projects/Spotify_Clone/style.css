@@ -31,6 +31,9 @@ body{
     width: 100%;
     /* border: 2px solid white; */
 }
+.logo .spotify{
+    width: 110px;
+}
 .close{
     display: none;
 }
@@ -271,6 +274,7 @@ body{
 }
 .songtime{
     width: 70px;
+
     /* border: 2px solid white; */
 }
 .musiccontrol{
@@ -289,7 +293,9 @@ body{
     gap: 6px;
     cursor: pointer;
 }
-
+.range input{
+   cursor: pointer;
+}
 @media screen and (max-width:1200px) {
     .left {
        position: absolute;
