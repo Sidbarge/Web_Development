@@ -1,0 +1,33 @@
+//
+<!-- The Double Trouble: You are tasked with writing a function that doubles each element in an array. However, there's a catch: if the array contains consecutive duplicate elements, only double one of them. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function double(array) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] == array[i + 1]) {
+                    array[i] *= 2;
+                    i++;
+                }
+                else {
+                    array[i] *= 2;
+                }
+                
+            }
+            return array
+        }
+        const arr = [1,2,3,4,6,8,9];
+        console.log(double(arr))
+    </script>
+</body>
+
+</html>

@@ -35,6 +35,6 @@ async function main(){
     console.log("Process data")
 
     console.log("Task 2")
-}
+    }
 
 main()

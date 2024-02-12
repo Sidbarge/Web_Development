@@ -1,0 +1,114 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.items-align{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.bg-grey{
+    background-color: #121212;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.p-1{
+    padding:10px;
+}
+
+/* Width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+
+  .play-btn-dark,
+.pause-btn-dark,
+.previous-btn-dark,
+.next-btn-dark {
+  width: 50px; /* Set the width */
+  height: 50px; /* Set the height */
+  border-radius: 50%; /* Rounded shape */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  cursor: pointer; /* Cursor style */
+  position: relative; /* Positioning for gradient overlay */
+}
+
+.play-btn-dark:hover,
+.pause-btn-dark:hover,
+.previous-btn-dark:hover,
+.next-btn-dark:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);  */
+}
+
+.play-btn-dark::after,
+.pause-btn-dark::after,
+.previous-btn-dark::after,
+.next-btn-dark::after {
+  content: ''; /* Empty content for pseudo-element */
+  position: absolute; /* Positioning */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent); /* Gradient overlay */
+  border-radius: 50%; /* Rounded shape */
+  animation: pulse 2s infinite; /* Pulsating animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8); /* Initial scale */
+    opacity: 0.5; /* Initial opacity */
+  }
+  50% {
+    transform: scale(1.2); /* Pulse to larger size */
+    opacity: 0; /* Fade out */
+  }
+  100% {
+    transform: scale(0.8); /* Return to initial scale */
+    opacity: 0.5; /* Return to initial opacity */
+  }
+}
+

@@ -89,6 +89,7 @@ img{
     gap: 5px;
     padding: 10px;
     color: rgb(155, 154, 154);
+    align-items: center;
 }
 
 .duration{
