@@ -22,7 +22,8 @@ function formatTime(totalSeconds) {
 async function getsongs(folder) {
     currfolder = folder;
     let a = await fetch(`http://127.0.0.1:5502/${folder}/`)
-    // console.log(a, "a")
+    console.log(folder)
+    console.log(a, "a")
     let response = await a.text();
     // console.log(response,"response")
     let div = document.createElement("div")
