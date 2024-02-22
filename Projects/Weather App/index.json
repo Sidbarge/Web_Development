@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 74.22,
+        "lat": 18.88
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 21.61,
+        "feels_like": 20.87,
+        "temp_min": 21.61,
+        "temp_max": 21.61,
+        "pressure": 1014,
+        "humidity": 40,
+        "sea_level": 1014,
+        "grnd_level": 947
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.05,
+        "deg": 296,
+        "gust": 7.29
+    },
+    "clouds": {
+        "all": 27
+    },
+    "dt": 1708620153,
+    "sys": {
+        "country": "IN",
+        "sunrise": 1708565269,
+        "sunset": 1708607158
+    },
+    "timezone": 19800,
+    "id": 1256025,
+    "name": "Sirūr",
+    "cod": 200
+}
