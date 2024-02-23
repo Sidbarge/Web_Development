@@ -22,12 +22,14 @@ function switchTab(clickedTab) {
     if (!searchForm.classList.contains("active")) {
       userInfoContainer.classList.remove("active")
       grantAccessContainer.classList.remove("active")
+      apiErrorContainer.classList.remove("active")
       searchForm.classList.add("active")
     }
     else {
       //When we are on search tab
       searchForm.classList.remove("active")
       userInfoContainer.classList.remove("active")
+      apiErrorContainer.classList.remove("active")
       getfromSessionStorage();
     }
   }
