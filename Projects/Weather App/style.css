@@ -236,7 +236,19 @@ h1{
     align-items: center;
     justify-content: center;
 }
-
+.api-error-container{
+    display: none;
+}
+.api-error-container img{
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.api-error-container.active{
+    display: flex;
+    gap: 1rem 0;
+}
 @media screen and (max-width:768px) {
     .parameter-container {
         flex-direction: column;
