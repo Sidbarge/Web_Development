@@ -1,0 +1,25 @@
+{
+    "questions": [
+      {
+        "question": "What does HTML stand for?",
+        "options": {
+          "i": "Hyper Text Markup Language",
+          "ii": "Home Tool Markup Language",
+          "iii": "Hyperlink Markup Language",
+          "iv": "Hyper Text Markdown Language"
+        },
+        "ans": "i"
+      },
+      {
+        "question": "Who is making the Web standards?",
+        "options": {
+          "i": "Mozilla",
+          "ii": "Google",
+          "iii": "The World Wide Web Consortium",
+          "iv": "Microsoft"
+        },
+        "ans": "iii"
+      }
+    ]
+}
+  
